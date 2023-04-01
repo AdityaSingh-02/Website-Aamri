@@ -1,0 +1,47 @@
+
+.footer{
+    width:100%;
+    background-color:rgba(19,19,19,0.8);
+    padding:6rem 0;  
+}
+.footer-container{
+    display:grid;
+    margin:auto;
+    max-width:1040px;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap:40px;
+}
+.left .location{
+    display: grid;
+    grid-template-columns:repeat(2,0.1fr);   
+}
+.left .phone{
+    display: grid;
+    grid-template-columns:repeat(2,0.1fr);   
+}
+.left .email{
+    display: grid;
+    grid-template-columns:repeat(2,0.12fr);   
+}
+.linked-in-icon{
+    width:27px;
+    height:27px;
+    padding-top:0.9px;
+}
+.insta-icon{
+    width:30px;
+    height:30px;
+    padding-top:1px;
+}
+.link-insta{
+    display: grid;
+    grid-template-columns: repeat(2,0.08fr);
+}
+.location .fa{
+    color:#fff;
+}
+@media screen and (max-width:640px){
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+}

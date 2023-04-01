@@ -1,0 +1,89 @@
+
+.project-heading{
+    text-align:center;
+    padding:4rem 0 2rem 0;
+}
+.project-container{
+    max-width:1140px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:40px;
+    padding-bottom:5rem;
+}
+.project-card{
+    border-radius: 30px;
+    background-image: url("https://images.pexels.com/photos/7291704/pexels-photo-7291704.jpeg?auto=compress&cs=tinysrgb&w=600");
+    padding:1.2rem 1rem;
+    white-space:pre-line;
+}
+.project-card img{
+    height: 20rem;
+    width:100%;
+    animation-name:aamri;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+}
+
+.pro-btns{
+    display:flex;
+    justify-content:space-between;
+    padding:1rem;
+    align-items:center;
+}
+.btn-view{
+    font-size:1rem;
+    text-transform: uppercase;
+    background:rgb(71, 187, 71);
+    border:1px solid #fff;
+    font-weight:600;
+    border-radius:26px;
+    padding:0 1rem;
+    margin-bottom:0;
+}
+.a-btn{
+    background-color:white;
+    padding:0.5rem 1rem;
+    border-radius:2rem;
+    color:black;
+    border:1px solid white;
+}
+.a-btn:hover{
+    background-color:transparent;
+}
+
+.btn-source:hover{
+    background-color:rgb(136, 217, 136);
+}
+.btn-view:hover{
+    background-color:rgb(136, 217, 136);
+}
+.project-title{
+    color:black;
+    padding:1rem 0;
+    font-family:sans serif;
+}
+.pro-details p{
+    padding-bottom:1rem;
+    font-size:1.1rem;
+    text-align:justify;
+    font-family:sans serif;
+    color:black;
+    font-weight:500;
+    font-style:bold;
+}
+@media screen and (max-width:740px){
+    .project-container{
+        max-width:90%;
+        margin:auto;
+        grid-template-columns:1fr;
+    }
+}
+    @keyframes aamri{
+        0%{border:5px solid transparent;}
+        25%{border-top:5px solid grey;}
+        50%{border-right:5px solid grey;}
+        60%{border-bottom:5px solid grey;}
+        75%{border-left:5px solid grey;}
+        100%{border:5px solid transparent;}
+        }

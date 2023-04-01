@@ -1,0 +1,41 @@
+.about{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1rem;
+}
+.about .left{
+    padding:3rem;
+    text-align:center;
+    max-width:350rem;
+}
+.left h1{
+    padding:0.5rem;
+}
+.left p{
+    font-family:cursive;
+    padding:0.3rem;
+}
+.about .right{
+    align-items: center;
+    justify-content: space-around;
+    max-width:700rem;
+    position: relative;
+}
+.img{
+    padding:4rem;
+    height:18rem;
+    width:22rem;
+}
+.top{
+    display: none;
+    position: absolute;
+}
+.bottom{
+    position: absolute;
+}
+.center{
+    position: absolute;
+    display: none;
+}
+
