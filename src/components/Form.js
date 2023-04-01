@@ -19,16 +19,20 @@ const Form = () => {
         setMessage(value);
       }
     }
-    const handelSubmit=()=>{
+    const handelSubmit=async (e)=>{
+      e.preventDefault();
       let obj={
-        name:name,
-        email:email,
-        message:message
-      }
-      const newPostKey = push(child(ref(database), 'posts')).key;
-      const updates = {};
-      updates['/' + newPostKey] = obj
-      return update(ref(database), updates);
+            name:name,
+            email:email,
+            message:message
+            
+          }
+     const res=await fetch("https://contactform-b25f1-default-rtdb.firebaseio.com/contactform.json",{method:"POST",headers:{"Content-Type":"application/json",},body:JSON.stringify(obj)});
+     if(res){
+      setName("");
+      setEmail("");
+      setMessage("");
+     }
     }
   return (
     <div className="form">
